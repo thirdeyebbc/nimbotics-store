@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIMBOTICS | Shopping Bag</title>
+    <meta name="description" content="Your NIMBOTICS shopping bag">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">NIMBOTICS<span>.</span></a>
+
+        <nav>
+            <a href="index.html#home">Home</a>
+            <a href="index.html#collection">Collection</a>
+            <a href="index.html#technology">Technology</a>
+            <a href="index.html#about">Our Story</a>
+        </nav>
+
+        <a href="cart.html" class="cart-link">
+            Shopping Bag <span id="cart-count">0</span>
+        </a>
+    </header>
+
+    <main class="bag-container">
+        <div class="cart-header-row">
+            <div class="section-heading-wrap">
+                <div class="bag-title-icon" aria-hidden="true">👜</div>
+                <div>
+                    <h1>YOUR SHOPPING BAG</h1>
+                    <p class="cart-subtitle">Your next-generation protection is just a step away.</p>
+                </div>
+            </div>
+            <div class="item-pill">
+                <span id="header-item-total">0</span> items
+            </div>
+        </div>
+
+        <div class="cart-layout">
+            <section id="bag-items" class="bag-items" aria-live="polite"></section>
+
+            <aside class="order-summary">
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <strong id="subtotal">₹ 0</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery charges</span>
+                    <strong id="delivery">₹ 0</strong>
+                </div>
+
+                <div class="summary-row discount-row">
+                    <span>Discount</span>
+                    <strong id="discount">- ₹ 0</strong>
+                </div>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <strong id="total-price">₹ 0</strong>
+                </div>
+
+                <button class="checkout-btn" type="button">PROCEED TO CHECKOUT →</button>
+                <p class="checkout-note">Secure checkout | Quality products | Customer support</p>
+            </aside>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
