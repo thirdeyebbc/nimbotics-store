@@ -132,7 +132,7 @@ const PRODUCT_CATALOG = {
     name: 'Glow Brella',
     category: 'Illuminated Personal Umbrella',
     price: 1499,
-    image: 'products/glow-brella.png',
+    image: 'images/products/glow-brella.png',
     description: 'A premium illuminated umbrella with LED lighting, emergency visibility and a multifunctional handle utility.',
     heroText: 'Stay visible, connected and prepared for evening travel with smart illumination features.',
     features: [
