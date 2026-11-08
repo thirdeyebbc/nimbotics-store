@@ -90,7 +90,7 @@ const PRODUCT_CATALOG = {
     name: 'Cool Brella',
     category: 'Cooling Personal Umbrella',
     price: 1499,
-    image: 'products/cool-brella.png',
+    image: 'images/products/cool-brella.png',
     description: 'A personal cooling umbrella with built-in fan technology and UV protection for comfortable, everyday use.',
     heroText: 'Stay cooler, protected and comfortable with a fresh green modern design.',
     features: [
