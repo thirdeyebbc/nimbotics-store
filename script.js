@@ -174,7 +174,7 @@ const PRODUCT_CATALOG = {
     name: 'Custom Bella',
     category: 'Customisable Personal Umbrella',
     price: 1499,
-    image: 'products/custom-bella.png',
+    image: 'images/products/custom-bella.png',
     description: 'A personalised umbrella with interchangeable canopy designs and custom branding options for personal or corporate use.',
     heroText: 'Express your style with personalised designs, interchangeable canopy options and branded finishes.',
     features: [
