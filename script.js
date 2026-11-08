@@ -6,7 +6,7 @@ const PRODUCT_CATALOG = {
     name: 'Power Brella',
     category: 'Commercial Smart Umbrella',
     price: 19999,
-    image: 'products/power-brella.png',
+    image: 'images/products/power-brella.png',
     description: 'Commercial solar-powered umbrella engineered for restaurants, cafes, shops and premium outdoor spaces.',
     heroText: 'Built for streetside brands, patio dining and high-visibility commercial setups.',
     features: [
