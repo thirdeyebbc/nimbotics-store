@@ -48,7 +48,7 @@ const PRODUCT_CATALOG = {
     name: 'Smart Bella',
     category: 'Intelligent Personal Umbrella',
     price: 1499,
-    image: 'products/smart-bella.png',
+    image: 'images/products/smart-bella.png',
     description: 'An intelligent personal umbrella that keeps you informed, protected and connected with real-time weather awareness.',
     heroText: 'Smart safety features, precise weather alerts and personal mobility support in one premium umbrella.',
     features: [
