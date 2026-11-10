@@ -1,11 +1,11 @@
 const CART_KEY = 'nimboticsBag';
-const NIMBOTICS_PUBLIC_URL = 'https://nimbotics.com';
+const NIMBOTICS_PUBLIC_URL = 'https://nimbotics-store.vercel.app/';
 
 const PRODUCT_CATALOG = {
   'Power Brella': {
     name: 'Power Brella',
-    category: 'Commercial Smart Umbrella',
-    price: 19999,
+    category: 'Solar-Powered',
+    price: 1999,
     image: 'images/products/power-brella.png',
     description: 'Commercial solar-powered umbrella engineered for restaurants, cafes, shops and premium outdoor spaces.',
     heroText: 'Built for streetside brands, patio dining and high-visibility commercial setups.',
@@ -44,10 +44,11 @@ const PRODUCT_CATALOG = {
     ],
     related: ['Smart Bella', 'Glow Brella', 'Cool Brella']
   },
+
   'Smart Bella': {
     name: 'Smart Bella',
-    category: 'Intelligent Personal Umbrella',
-    price: 1499,
+    category: 'Smart Technology',
+    price: 2499,
     image: 'images/products/smart-bella.png',
     description: 'An intelligent personal umbrella that keeps you informed, protected and connected with real-time weather awareness.',
     heroText: 'Smart safety features, precise weather alerts and personal mobility support in one premium umbrella.',
@@ -84,11 +85,12 @@ const PRODUCT_CATALOG = {
         answer: 'Yes. Smart Bella is built for practical daily life and quick travel scenarios.'
       }
     ],
-    related: ['Glow Brella', 'Cool Brella', 'Custom Bella']
+    related: ['Glow Brella', 'Cool Brella', 'Style Bella']
   },
+
   'Cool Brella': {
     name: 'Cool Brella',
-    category: 'Cooling Personal Umbrella',
+    category: 'Cooling & Protection',
     price: 1499,
     image: 'images/products/cool-brella.png',
     description: 'A personal cooling umbrella with built-in fan technology and UV protection for comfortable, everyday use.',
@@ -128,10 +130,11 @@ const PRODUCT_CATALOG = {
     ],
     related: ['Smart Bella', 'Glow Brella', 'Power Brella']
   },
+
   'Glow Brella': {
     name: 'Glow Brella',
-    category: 'Illuminated Personal Umbrella',
-    price: 1499,
+    category: 'LED Visibility',
+    price: 1299,
     image: 'images/products/glow-brella.png',
     description: 'A premium illuminated umbrella with LED lighting, emergency visibility and a multifunctional handle utility.',
     heroText: 'Stay visible, connected and prepared for evening travel with smart illumination features.',
@@ -168,11 +171,12 @@ const PRODUCT_CATALOG = {
         answer: 'Yes. It includes an SOS button and a torch built into the handle for added safety.'
       }
     ],
-    related: ['Smart Bella', 'Cool Brella', 'Custom Bella']
+    related: ['Smart Bella', 'Cool Brella', 'Style Bella']
   },
-  'Custom Bella': {
-    name: 'Custom Bella',
-    category: 'Customisable Personal Umbrella',
+
+  'Style Bella': {
+    name: 'Style Bella',
+    category: 'Fashion & Customization',
     price: 1499,
     image: 'images/products/custom-bella.png',
     description: 'A personalised umbrella with interchangeable canopy designs and custom branding options for personal or corporate use.',
@@ -199,7 +203,7 @@ const PRODUCT_CATALOG = {
     faqs: [
       {
         question: 'Can I request my own design?',
-        answer: 'Yes. Custom Bella allows customers to choose different canopy designs and submit their own custom design requests.'
+        answer: 'Yes. Style Bella allows customers to choose different canopy designs and submit their own custom design requests.'
       },
       {
         question: 'Is it suitable for brands or corporate gifting?',
@@ -280,6 +284,7 @@ function addToBag(productName, quantity = 1) {
   saveCart(cart);
   updateBagCount();
   syncProductCards();
+
   if (document.getElementById('bag-items')) {
     renderBagPage();
   }
@@ -302,6 +307,7 @@ function removeFromBag(productName, quantity = 1) {
   saveCart(cart);
   updateBagCount();
   syncProductCards();
+
   if (document.getElementById('bag-items')) {
     renderBagPage();
   }
@@ -310,37 +316,46 @@ function removeFromBag(productName, quantity = 1) {
 function bindProductControls() {
   document.addEventListener('click', (event) => {
     const addButton = event.target.closest('.qty-add');
+
     if (addButton) {
       const productCard = addButton.closest('.product-option');
+
       if (productCard) {
         addToBag(productCard.dataset.product);
       }
+
       return;
     }
 
     const removeButton = event.target.closest('.qty-remove');
+
     if (removeButton) {
       const productCard = removeButton.closest('.product-option');
+
       if (productCard) {
         removeFromBag(productCard.dataset.product);
       }
     }
 
     const detailAddButton = event.target.closest('.detail-add-to-bag');
+
     if (detailAddButton) {
       const productName = detailAddButton.dataset.product;
       const qtyInput = document.getElementById('product-qty');
       const qty = Number(qtyInput?.value || 1);
+
       if (productName) {
         addToBag(productName, qty);
       }
     }
 
     const detailBuyButton = event.target.closest('.detail-buy-now');
+
     if (detailBuyButton) {
       const productName = detailBuyButton.dataset.product;
       const qtyInput = document.getElementById('product-qty');
       const qty = Number(qtyInput?.value || 1);
+
       if (productName) {
         addToBag(productName, qty);
         window.location.href = 'cart.html';
@@ -389,7 +404,7 @@ function renderBagPage() {
 
     return `
       <article class="bag-item" data-product="${productName}">
-        <img class="bag-item-image" src="${product.image}" alt="${productName} umbrella" onerror="this.src='products/smart-bella.png';">
+        <img class="bag-item-image" src="${product.image}" alt="${productName} umbrella" onerror="this.src='images/products/smart-bella.png';">
         <div class="bag-item-copy">
           <div class="bag-item-header">
             <h3 class="bag-item-name">${productName}</h3>
@@ -402,7 +417,7 @@ function renderBagPage() {
               <span class="qty-value">${safeQty}</span>
               <button class="qty-btn qty-add" type="button" aria-label="Add one ${productName}">＋</button>
             </div>
-            <div class="unit-price">${formatINR(product.price)}</div>
+            <div class="unit-price">${productName === 'Style Bella' ? `From ${formatINR(product.price)}` : formatINR(product.price)}</div>
           </div>
         </div>
       </article>
@@ -419,6 +434,7 @@ function renderBagPage() {
   document.querySelectorAll('.qty-add').forEach((button) => {
     button.addEventListener('click', () => {
       const item = button.closest('.bag-item');
+
       if (item) {
         addToBag(item.dataset.product);
       }
@@ -428,6 +444,7 @@ function renderBagPage() {
   document.querySelectorAll('.qty-remove').forEach((button) => {
     button.addEventListener('click', () => {
       const item = button.closest('.bag-item');
+
       if (item) {
         removeFromBag(item.dataset.product);
       }
@@ -437,7 +454,9 @@ function renderBagPage() {
   document.querySelectorAll('.remove-item').forEach((button) => {
     button.addEventListener('click', () => {
       const productName = button.dataset.product;
+
       if (!productName) return;
+
       const currentCart = getCart();
       delete currentCart[productName];
       saveCart(currentCart);
@@ -467,11 +486,12 @@ function renderProductDetailPage() {
   }
 
   const breadcrumb = document.getElementById('current-product');
+
   if (breadcrumb) {
     breadcrumb.textContent = product.name;
   }
 
-  const customControl = product.name === 'Custom Bella'
+  const customControl = product.name === 'Style Bella'
     ? `
       <div class="customization-panel">
         <label for="custom-design">Choose canopy design</label>
@@ -490,17 +510,17 @@ function renderProductDetailPage() {
   root.innerHTML = `
     <div class="product-visual-panel">
       <div class="product-main-image-wrap">
-        <img id="main-product-image" src="${product.image}" alt="${product.name}" onerror="this.src='products/smart-bella.png';">
+        <img id="main-product-image" src="${product.image}" alt="${product.name}" onerror="this.src='images/products/smart-bella.png';">
       </div>
       <div class="product-thumb-row">
         <button class="product-thumb is-active" type="button" data-image="${product.image}">
-          <img src="${product.image}" alt="${product.name} thumbnail" onerror="this.src='products/smart-bella.png';">
+          <img src="${product.image}" alt="${product.name} thumbnail" onerror="this.src='images/products/smart-bella.png';">
         </button>
         <button class="product-thumb" type="button" data-image="${product.image}">
-          <img src="${product.image}" alt="${product.name} alternate thumbnail" onerror="this.src='products/smart-bella.png';">
+          <img src="${product.image}" alt="${product.name} alternate thumbnail" onerror="this.src='images/products/smart-bella.png';">
         </button>
         <button class="product-thumb" type="button" data-image="${product.image}">
-          <img src="${product.image}" alt="${product.name} alternate thumbnail 2" onerror="this.src='products/smart-bella.png';">
+          <img src="${product.image}" alt="${product.name} alternate thumbnail 2" onerror="this.src='images/products/smart-bella.png';">
         </button>
       </div>
     </div>
@@ -510,8 +530,8 @@ function renderProductDetailPage() {
       <h1>${product.name}</h1>
       <p class="detail-description">${product.description}</p>
       <div class="detail-price-row">
-        <span class="detail-price-label">Price</span>
-        <span class="detail-price">${formatINR(product.price)}</span>
+        <span class="detail-price-label">${product.name === 'Style Bella' ? 'Starting price' : 'Proposed price'}</span>
+        <span class="detail-price">${formatINR(product.price)}${product.name === 'Style Bella' ? ' onwards' : ''}</span>
       </div>
       <p class="detail-subtext">${product.heroText}</p>
 
@@ -593,9 +613,10 @@ function renderProductDetailPage() {
       <div class="related-grid">
         ${product.related.map((name) => {
           const item = PRODUCT_CATALOG[name];
+
           return `
             <a class="related-card" href="product.html?product=${encodeURIComponent(name)}">
-              <img src="${item.image}" alt="${name}" onerror="this.src='products/smart-bella.png';">
+              <img src="${item.image}" alt="${name}" onerror="this.src='images/products/smart-bella.png';">
               <div>
                 <h4>${name}</h4>
                 <span>${formatINR(item.price)}</span>
@@ -608,22 +629,32 @@ function renderProductDetailPage() {
   `;
 
   const mainImage = document.getElementById('main-product-image');
+
   document.querySelectorAll('.product-thumb').forEach((thumb) => {
     thumb.addEventListener('click', () => {
       const selectedImage = thumb.dataset.image;
+
       if (mainImage && selectedImage) {
         mainImage.src = selectedImage;
       }
-      document.querySelectorAll('.product-thumb').forEach((item) => item.classList.toggle('is-active', item === thumb));
+
+      document.querySelectorAll('.product-thumb').forEach((item) => {
+        item.classList.toggle('is-active', item === thumb);
+      });
     });
   });
 
   const qtyInput = document.getElementById('product-qty');
+
   document.querySelectorAll('.stepper-btn').forEach((button) => {
     button.addEventListener('click', () => {
       if (!qtyInput) return;
+
       const currentValue = Number(qtyInput.value) || 1;
-      const nextValue = button.dataset.action === 'increase' ? currentValue + 1 : Math.max(1, currentValue - 1);
+      const nextValue = button.dataset.action === 'increase'
+        ? currentValue + 1
+        : Math.max(1, currentValue - 1);
+
       qtyInput.value = nextValue;
     });
   });
@@ -638,9 +669,12 @@ function renderProductDetailPage() {
 
 function renderHeroQrCode() {
   const qrCanvas = document.getElementById('qr-code');
+
   if (!qrCanvas || typeof QRCode === 'undefined') {
     return;
   }
+
+  const downloadButton = document.getElementById('download-qr');
 
   QRCode.toCanvas(qrCanvas, NIMBOTICS_PUBLIC_URL, {
     width: 128,
@@ -652,6 +686,17 @@ function renderHeroQrCode() {
   }, function(error) {
     if (error) {
       console.error('QR code generation failed:', error);
+      return;
+    }
+
+    if (downloadButton) {
+      downloadButton.disabled = false;
+      downloadButton.addEventListener('click', () => {
+        const downloadLink = document.createElement('a');
+        downloadLink.download = 'nimbotics-website-qr.png';
+        downloadLink.href = qrCanvas.toDataURL('image/png');
+        downloadLink.click();
+      });
     }
   });
 }
