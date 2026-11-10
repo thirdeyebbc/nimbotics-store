@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NIMBOTICS | Smart Umbrellas</title>
-    <meta name="description" content="Discover intelligent umbrellas designed for modern lifestyles.">
+    <meta name="description" content="Discover NIMBOTICS smart umbrellas for comfort, safety and personal style.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header class="navbar">
         <a href="index.html" class="logo">NIMBOTICS<span>.</span></a>
 
-        <nav>
+        <nav aria-label="Main navigation">
             <a href="#home">Home</a>
             <a href="#collection">Collection</a>
             <a href="#technology">Technology</a>
@@ -38,59 +37,48 @@
                     <span>Reimagined.</span>
                 </h1>
 
-                <p class="hero-tagline">Experience the Future of Protection.</p>
+                <p class="hero-tagline">Experience the Future, Under One Umbrella.</p>
 
                 <p class="hero-description">
-                    Discover intelligent umbrellas combining innovative technology, everyday safety and personalized design.
+                    Discover intelligent umbrellas combining innovative technology,
+                    everyday safety and personalized design.
                 </p>
 
                 <div class="hero-actions">
-                    <a href="#collection" class="primary-button">
-                        Explore Collection →
-                    </a>
+                    <a href="#collection" class="primary-button">Explore Collection →</a>
                 </div>
 
                 <div class="feature-row">
                     <div class="feature-pill">
-                        <span class="feature-icon">💡</span>
+                        <span class="feature-icon" aria-hidden="true">💡</span>
                         <span>LED Lighting</span>
                     </div>
                     <div class="feature-pill">
-                        <span class="feature-icon">🔋</span>
-                        <span>Type-C Charging</span>
+                        <span class="feature-icon" aria-hidden="true">🔋</span>
+                        <span>USB Charging</span>
                     </div>
                     <div class="feature-pill">
-                        <span class="feature-icon">⚡</span>
+                        <span class="feature-icon" aria-hidden="true">⚡</span>
                         <span>SOS Button</span>
                     </div>
                     <div class="feature-pill">
-                        <span class="feature-icon">🔄</span>
+                        <span class="feature-icon" aria-hidden="true">🔄</span>
                         <span>Changeable Canopy</span>
                     </div>
                     <div class="feature-pill">
-                        <span class="feature-icon">🎨</span>
+                        <span class="feature-icon" aria-hidden="true">🎨</span>
                         <span>Custom Designs</span>
                     </div>
                 </div>
-
-                <div class="hero-qr" aria-label="Scan to explore NIMBOTICS">
-                    <div class="qr-scan-frame">
-                        <canvas id="qr-code" width="128" height="128" aria-label="QR code"></canvas>
-                    </div>
-                    <div class="qr-copy">
-                        <span class="qr-label">SCAN TO EXPLORE NIMBOTICS</span>
-                        <small>Scan to discover our smart umbrella collection.</small>
-                    </div>
-                    <button class="qr-download-button" id="download-qr" type="button" disabled>
-                        Download QR code
-                    </button>
-                </div>
             </div>
 
-            <div class="hero-product" aria-label="Premium smart umbrella product showcase">
+            <div class="hero-product" aria-label="Smart Bella umbrella showcase">
                 <div class="product-glow"></div>
                 <div class="hero-product-card">
-                    <img src="images/products/smart-bella.png" alt="Premium Smart Bella umbrella product image">
+                    <img
+                        src="images/products/smart-bella.png"
+                        alt="NIMBOTICS Smart Bella umbrella"
+                    >
                 </div>
             </div>
         </section>
@@ -101,98 +89,161 @@
             <p>Five models. Five different experiences.</p>
 
             <div class="product-lineup">
-    <article class="product-option" data-product="Power Brella" data-price="9000">
-        <a class="product-visual-link" href="product.html?product=Power%20Brella" aria-label="View Power Brella details">
-            <img src="images/products/power-brella.png" alt="Power Brella commercial solar umbrella">
-        </a>
-        <div class="product-info">
-            <h3><a href="product.html?product=Power%20Brella">Power Brella</a></h3>
-            <p class="product-intro">Commercial solar umbrella built for premium outdoor spaces, lighting and charging support.</p>
-            <ul>
-                <li>Solar Canopy</li>
-                <li>Commercial Ready</li>
-                <li>USB Charging</li>
-            </ul>
-        </div>
-        <div class="price-tag">₹ 9,000</div>
-        <div class="product-actions">
-            <a class="view-product-btn" href="product.html?product=Power%20Brella">View Product</a>
-        </div>
-    </article>
+                <article class="product-option" data-product="Power Brella" data-price="9000">
+                    <a class="product-visual-link"
+                       href="product.html?product=Power%20Brella"
+                       aria-label="View Power Brella details">
+                        <img src="images/products/power-brella.png"
+                             alt="Power Brella large solar canopy umbrella">
+                    </a>
+                    <div class="product-info">
+                        <h3><a href="product.html?product=Power%20Brella">Power Brella</a></h3>
+                        <p class="product-intro">
+                            A large solar-powered umbrella designed for stalls, cafes
+                            and other commercial outdoor spaces.
+                        </p>
+                        <ul>
+                            <li>Solar Canopy</li>
+                            <li>Electric Blue</li>
+                            <li>Big Size for Stall</li>
+                            <li>USB Charging</li>
+                        </ul>
+                    </div>
+                    <div class="price-tag">₹ 9,000</div>
+                    <div class="product-actions">
+                        <a class="view-product-btn"
+                           href="product.html?product=Power%20Brella">View Product</a>
+                    </div>
+                </article>
 
-    <article class="product-option" data-product="Smart Bella" data-price="6000">
-        <a class="product-visual-link" href="product.html?product=Smart%20Bella" aria-label="View Smart Bella details">
-            <img src="images/products/smart-bella.png" alt="Smart Bella umbrella">
-        </a>
-        <div class="product-info">
-            <h3><a href="product.html?product=Smart%20Bella">Smart Bella</a></h3>
-            <p class="product-intro">Smart personal umbrella with weather insights, GPS tracking and everyday safety support.</p>
-            <ul>
-                <li>Weather Alerts</li>
-                <li>GPS Tracking</li>
-                <li>Smart Sensors</li>
-            </ul>
-        </div>
-        <div class="price-tag">₹ 6,000</div>
-        <div class="product-actions">
-            <a class="view-product-btn" href="product.html?product=Smart%20Bella">View Product</a>
-        </div>
-    </article>
+                <article class="product-option" data-product="Smart Bella" data-price="6000">
+                    <a class="product-visual-link"
+                       href="product.html?product=Smart%20Bella"
+                       aria-label="View Smart Bella details">
+                        <img src="images/products/smart-bella.png"
+                             alt="Smart Bella umbrella">
+                    </a>
+                    <div class="product-info">
+                        <h3><a href="product.html?product=Smart%20Bella">Smart Bella</a></h3>
+                        <p class="product-intro">
+                            A smart personal umbrella with weather information,
+                            GPS tracking and sensor-based features.
+                        </p>
+                        <ul>
+                            <li>Weather Alerts</li>
+                            <li>GPS Tracking</li>
+                            <li>Smart Sensors</li>
+                        </ul>
+                    </div>
+                    <div class="price-tag">₹ 6,000</div>
+                    <div class="product-actions">
+                        <a class="view-product-btn"
+                           href="product.html?product=Smart%20Bella">View Product</a>
+                    </div>
+                </article>
 
-    <article class="product-option" data-product="Cool Brella" data-price="3000">
-        <a class="product-visual-link" href="product.html?product=Cool%20Brella" aria-label="View Cool Brella details">
-            <img src="images/products/cool-brella.png" alt="Cool Brella with built-in fan">
-        </a>
-        <div class="product-info">
-            <h3><a href="product.html?product=Cool%20Brella">Cool Brella</a></h3>
-            <p class="product-intro">Cooling umbrella designed for comfortable airflow, shade and UV protection in hot weather.</p>
-            <ul>
-                <li>Fan Under the Umbrella</li>
-                <li>UV Protection</li>
-                <li>Fresh Green</li>
-            </ul>
-        </div>
-        <div class="price-tag">₹ 3,000</div>
-        <div class="product-actions">
-            <a class="view-product-btn" href="product.html?product=Cool%20Brella">View Product</a>
-        </div>
-    </article>
+                <article class="product-option" data-product="Cool Brella" data-price="3000">
+                    <a class="product-visual-link"
+                       href="product.html?product=Cool%20Brella"
+                       aria-label="View Cool Brella details">
+                        <img src="images/products/cool-brella.png"
+                             alt="Cool Brella umbrella">
+                    </a>
+                    <div class="product-info">
+                        <h3><a href="product.html?product=Cool%20Brella">Cool Brella</a></h3>
+                        <p class="product-intro">
+                            A cooling umbrella with a fan positioned underneath the
+                            canopy, plus shade and UV protection.
+                        </p>
+                        <ul>
+                            <li>Fan Under the Umbrella</li>
+                            <li>UV Protection</li>
+                            <li>Fresh Green</li>
+                        </ul>
+                    </div>
+                    <div class="price-tag">₹ 3,000</div>
+                    <div class="product-actions">
+                        <a class="view-product-btn"
+                           href="product.html?product=Cool%20Brella">View Product</a>
+                    </div>
+                </article>
 
-    <article class="product-option" data-product="Glow Brella" data-price="3000">
-        <a class="product-visual-link" href="product.html?product=Glow%20Brella" aria-label="View Glow Brella details">
-            <img src="images/products/glow-brella.png" alt="Glow Brella with illuminated canopy">
-        </a>
-        <div class="product-info">
-            <h3><a href="product.html?product=Glow%20Brella">Glow Brella</a></h3>
-            <p class="product-intro">Night-ready umbrella with LED lighting, USB charging and added visibility.</p>
-            <ul>
-                <li>Exactly 15 LED Strips</li>
-                <li>USB Charging</li>
-                <li>Night Visibility · Neon Orange</li>
-            </ul>
-        </div>
-        <div class="price-tag">₹ 3,000</div>
-        <div class="product-actions">
-            <a class="view-product-btn" href="product.html?product=Glow%20Brella">View Product</a>
-        </div>
-    </article>
+                <article class="product-option" data-product="Glow Brella" data-price="3000">
+                    <a class="product-visual-link"
+                       href="product.html?product=Glow%20Brella"
+                       aria-label="View Glow Brella details">
+                        <img src="images/products/glow-brella.png"
+                             alt="Glow Brella illuminated umbrella">
+                    </a>
+                    <div class="product-info">
+                        <h3><a href="product.html?product=Glow%20Brella">Glow Brella</a></h3>
+                        <p class="product-intro">
+                            A night-visibility umbrella with illuminated canopy strips
+                            and useful safety features.
+                        </p>
+                        <ul>
+                            <li>Exactly 15 LED Strips</li>
+                            <li>USB Charging</li>
+                            <li>Night Visibility</li>
+                            <li>Neon Orange</li>
+                            <li>Torch on Handle and SOS Button</li>
+                        </ul>
+                    </div>
+                    <div class="price-tag">₹ 3,000</div>
+                    <div class="product-actions">
+                        <a class="view-product-btn"
+                           href="product.html?product=Glow%20Brella">View Product</a>
+                    </div>
+                </article>
 
-    <article class="product-option" data-product="Style Bella" data-price="2500">
-        <a class="product-visual-link" href="product.html?product=Style%20Bella" aria-label="View Style Bella details">
-            <img src="images/products/custom-bella.png" alt="Style Bella customizable umbrella">
-        </a>
-        <div class="product-info">
-            <h3><a href="product.html?product=Style%20Bella">Style Bella</a></h3>
-            <p class="product-intro">Personalized umbrella with interchangeable canopies and custom design options.</p>
-            <ul>
-                <li>Custom Designs</li>
-                <li>Branding Options</li>
-                <li>Interchangeable Canopy</li>
-            </ul>
-        </div>
-        <div class="price-tag">₹ 2,500</div>
-        <div class="product-actions">
-            <a class="view-product-btn" href="product.html?product=Style%20Bella">View Product</a>
-        </div>
-    </article>
-</div>
+                <article class="product-option" data-product="Style Bella" data-price="2500">
+                    <a class="product-visual-link"
+                       href="product.html?product=Style%20Bella"
+                       aria-label="View Style Bella details">
+                        <img src="images/products/custom-bella.png"
+                             alt="Style Bella customizable umbrella">
+                    </a>
+                    <div class="product-info">
+                        <h3><a href="product.html?product=Style%20Bella">Style Bella</a></h3>
+                        <p class="product-intro">
+                            A personalized umbrella with interchangeable canopies,
+                            custom designs and branding options.
+                        </p>
+                        <ul>
+                            <li>Custom Designs</li>
+                            <li>Branding Options</li>
+                            <li>Interchangeable Canopy</li>
+                        </ul>
+                    </div>
+                    <div class="price-tag">₹ 2,500</div>
+                    <div class="product-actions">
+                        <a class="view-product-btn"
+                           href="product.html?product=Style%20Bella">View Product</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="technology" id="technology">
+            <p class="eyebrow">SMARTER BY DESIGN</p>
+            <h2>Technology Meets Everyday Protection.</h2>
+            <p>
+                From solar charging and weather alerts to cooling airflow and
+                night-time visibility, each NIMBOTICS umbrella is designed around
+                a different everyday need.
+            </p>
+        </section>
+
+        <section class="about" id="about">
+            <h2>Designed for Tomorrow.</h2>
+            <p>Welcome to the future of everyday protection.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 NIMBOTICS. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
