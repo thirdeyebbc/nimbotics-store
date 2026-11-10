@@ -1,45 +1,39 @@
 const CART_KEY = 'nimboticsBag';
-const NIMBOTICS_PUBLIC_URL = 'https://nimbotics-store.vercel.app/';
 
 const PRODUCT_CATALOG = {
   'Power Brella': {
     name: 'Power Brella',
     category: 'Solar-Powered',
-    price: 1999,
+    price: 9000,
     image: 'images/products/power-brella.png',
-    description: 'Commercial solar-powered umbrella engineered for restaurants, cafes, shops and premium outdoor spaces.',
-    heroText: 'Built for streetside brands, patio dining and high-visibility commercial setups.',
+    description: 'A large solar-powered umbrella designed for stalls, cafes, restaurants and commercial outdoor spaces.',
+    heroText: 'Electric blue canopy, generous coverage and solar-powered USB charging for outdoor business use.',
     features: [
-      { icon: '☀️', label: 'Solar-powered canopy' },
-      { icon: '🔋', label: 'USB charging' },
-      { icon: '💡', label: 'LED lighting' },
-      { icon: '🏬', label: 'Large commercial canopy' },
-      { icon: '⚡', label: 'All-day performance' }
+      { icon: '☀️', label: 'Solar canopy' },
+      { icon: '🔌', label: 'USB charging' },
+      { icon: '🔵', label: 'Electric blue' },
+      { icon: '🏪', label: 'Big size for stall' }
     ],
-    highlights: ['Commercial-ready design', 'High visibility canopy', 'Outdoor-ready charging'],
+    highlights: ['Large commercial coverage', 'Solar-powered design', 'Made for outdoor business use'],
     specifications: [
-      ['Use case', 'Restaurants, cafes, shops, external seating zones'],
-      ['Power', 'Solar canopy with USB charging output'],
-      ['Lighting', 'Integrated LED lighting for visibility'],
-      ['Canopy', 'Large coverage profile for commercial spaces']
+      ['Use case', 'Stalls, cafes, restaurants and commercial spaces'],
+      ['Power', 'Solar canopy with USB charging'],
+      ['Colour', 'Electric blue'],
+      ['Size', 'Large canopy for stall and business use']
     ],
     howItWorks: [
-      'The solar canopy absorbs daylight and stores power for continuous lighting and charging support.',
-      'Integrated LEDs and USB charging make it ideal for evening service and customer-facing hospitality spaces.',
-      'The durable structure is designed for outdoor commercial use without compromising aesthetics.'
+      'The canopy is designed to collect solar energy during the day.',
+      'Stored energy can support the umbrella’s USB charging feature.',
+      'The larger canopy gives customers and outdoor setups practical shade.'
     ],
     faqs: [
       {
-        question: 'Who is Power Brella best suited for?',
-        answer: 'It is ideal for commercial environments such as restaurants, cafes, retail shops and outdoor seating areas that need shade, lighting and device charging.'
+        question: 'Who is Power Brella designed for?',
+        answer: 'It is designed for stalls, cafes, restaurants and other businesses with outdoor spaces.'
       },
       {
-        question: 'Does it support device charging?',
-        answer: 'Yes. The umbrella includes USB charging functionality powered by the solar canopy for practical outdoor usage.'
-      },
-      {
-        question: 'Is it built for weather exposure?',
-        answer: 'Yes. It is designed for durable outdoor commercial use and is built to handle regularly exposed environments.'
+        question: 'Does it include USB charging?',
+        answer: 'Yes. USB charging is one of the proposed features of the solar-powered Power Brella.'
       }
     ],
     related: ['Smart Bella', 'Glow Brella', 'Cool Brella']
@@ -48,41 +42,36 @@ const PRODUCT_CATALOG = {
   'Smart Bella': {
     name: 'Smart Bella',
     category: 'Smart Technology',
-    price: 2499,
+    price: 6000,
     image: 'images/products/smart-bella.png',
-    description: 'An intelligent personal umbrella that keeps you informed, protected and connected with real-time weather awareness.',
-    heroText: 'Smart safety features, precise weather alerts and personal mobility support in one premium umbrella.',
+    description: 'A smart personal umbrella designed to provide weather information, GPS tracking and sensor-based support.',
+    heroText: 'Stay informed about changing weather and keep useful smart features close at hand.',
     features: [
-      { icon: '📡', label: 'Weather alerts' },
+      { icon: '🌦️', label: 'Weather alerts' },
       { icon: '📍', label: 'GPS tracking' },
       { icon: '🧠', label: 'Smart sensors' },
-      { icon: '🛡️', label: 'Safety-focused design' },
-      { icon: '🔔', label: 'Real-time notifications' }
+      { icon: '🛡️', label: 'Everyday safety support' }
     ],
-    highlights: ['Personal safety intelligence', 'Smart sensing and notification system', 'Travel-ready tracking'],
+    highlights: ['Weather alerts', 'GPS tracking', 'Smart sensors'],
     specifications: [
-      ['Use case', 'Personal everyday protection and urban mobility'],
-      ['Tracking', 'GPS-enabled location support'],
-      ['Alerts', 'Weather update notifications'],
-      ['Sensors', 'Smart environmental detection']
+      ['Use case', 'Personal everyday use and commuting'],
+      ['Tracking', 'GPS tracking feature'],
+      ['Alerts', 'Weather alerts'],
+      ['Sensors', 'Smart sensors']
     ],
     howItWorks: [
-      'The umbrella continuously monitors environmental conditions and alerts the user to changing weather conditions.',
-      'GPS tracking and safety sensors keep it useful for commuting, travel and on-the-go protection.',
-      'Its smart design keeps personal safety and practicality at the core of the product experience.'
+      'Weather alerts are designed to help keep you aware of changing conditions.',
+      'GPS tracking is included as a proposed feature for added convenience.',
+      'Smart sensors support the umbrella’s connected product concept.'
     ],
     faqs: [
       {
-        question: 'What makes Smart Bella different?',
-        answer: 'It combines personal protection with integrated sensors, weather alerts and GPS tracking for daily use and safety awareness.'
+        question: 'What are Smart Bella’s main features?',
+        answer: 'The concept includes weather alerts, GPS tracking and smart sensors.'
       },
       {
-        question: 'Can I use it for commuting?',
-        answer: 'Yes. It is designed for everyday personal use and is especially useful while commuting or moving through changing conditions.'
-      },
-      {
-        question: 'Is it suitable for everyday travel?',
-        answer: 'Yes. Smart Bella is built for practical daily life and quick travel scenarios.'
+        question: 'Is Smart Bella designed for daily use?',
+        answer: 'Yes. It is designed as a personal umbrella for everyday use and commuting.'
       }
     ],
     related: ['Glow Brella', 'Cool Brella', 'Style Bella']
@@ -91,41 +80,36 @@ const PRODUCT_CATALOG = {
   'Cool Brella': {
     name: 'Cool Brella',
     category: 'Cooling & Protection',
-    price: 1499,
+    price: 3000,
     image: 'images/products/cool-brella.png',
-    description: 'A personal cooling umbrella with built-in fan technology and UV protection for comfortable, everyday use.',
-    heroText: 'Stay cooler, protected and comfortable with a fresh green modern design.',
+    description: 'A personal cooling umbrella with a built-in fan located underneath the canopy, plus shade and UV protection.',
+    heroText: 'Enjoy cooling airflow from the fan under the umbrella while staying shaded outdoors.',
     features: [
-      { icon: '❄️', label: 'Built-in fan' },
+      { icon: '❄️', label: 'Fan under the umbrella' },
       { icon: '🛡️', label: 'UV protection' },
       { icon: '🌿', label: 'Fresh green design' },
-      { icon: '😌', label: 'All-day comfort' },
       { icon: '💨', label: 'Cooling airflow' }
     ],
-    highlights: ['Cooling airflow design', 'UV protection layer', 'Lightweight personal comfort'],
+    highlights: ['Fan positioned under the canopy', 'UV protection', 'Cooling airflow'],
     specifications: [
-      ['Use case', 'Personal outdoor comfort and sunny conditions'],
-      ['Cooling', 'Integrated fan support'],
-      ['Protection', 'UV-protected canopy'],
-      ['Style', 'Fresh green premium finish']
+      ['Use case', 'Personal outdoor comfort in warm weather'],
+      ['Fan location', 'Under the umbrella canopy'],
+      ['Protection', 'UV protection'],
+      ['Colour', 'Fresh green']
     ],
     howItWorks: [
-      'The built-in fan circulates airflow while the canopy provides shade and protection from direct sun exposure.',
-      'The UV-protected structure keeps the user comfortable without sacrificing premium style.',
-      'It is designed for personal comfort during daily outdoor movement and warm conditions.'
+      'The built-in fan is positioned underneath the umbrella canopy.',
+      'The fan circulates air around the user while the canopy provides shade.',
+      'UV protection adds another layer of comfort for outdoor use.'
     ],
     faqs: [
       {
-        question: 'Is Cool Brella good for hot weather?',
-        answer: 'Yes. It is designed to help you stay cooler with ventilation and constant shade while outdoors.'
+        question: 'Where is the fan located?',
+        answer: 'The fan is underneath the umbrella canopy, not on the handle.'
       },
       {
-        question: 'Does it have enough shade for daily use?',
-        answer: 'Yes. It is built for personal use with practical coverage and comfort-focused design.'
-      },
-      {
-        question: 'Is it portable?',
-        answer: 'Yes. It is designed to remain lightweight and comfortable for regular personal use.'
+        question: 'What else does Cool Brella include?',
+        answer: 'The concept includes UV protection and a fresh green design.'
       }
     ],
     related: ['Smart Bella', 'Glow Brella', 'Power Brella']
@@ -134,41 +118,43 @@ const PRODUCT_CATALOG = {
   'Glow Brella': {
     name: 'Glow Brella',
     category: 'LED Visibility',
-    price: 1299,
+    price: 3000,
     image: 'images/products/glow-brella.png',
-    description: 'A premium illuminated umbrella with LED lighting, emergency visibility and a multifunctional handle utility.',
-    heroText: 'Stay visible, connected and prepared for evening travel with smart illumination features.',
+    description: 'A night-visibility umbrella with exactly 15 LED strips, USB charging, a torch in the handle and an SOS button.',
+    heroText: 'Be seen after dark with a neon orange canopy and illuminated LED strips.',
     features: [
-      { icon: '💡', label: 'LED lighting' },
-      { icon: '🔌', label: 'USB Type-C charging' },
+      { icon: '💡', label: 'Exactly 15 LED strips' },
+      { icon: '🔌', label: 'USB charging for LED strips' },
       { icon: '🌙', label: 'Night visibility' },
-      { icon: '🆘', label: 'SOS button' },
-      { icon: '🔦', label: 'Torch in the handle' }
+      { icon: '🟠', label: 'Neon orange' },
+      { icon: '🔦', label: 'Small torch on handle' },
+      { icon: '🆘', label: 'SOS button' }
     ],
-    highlights: ['Night visibility lighting', 'Emergency SOS support', 'Type-C power access'],
+    highlights: ['15 LED strips', 'USB charging', 'Torch and SOS button on the handle'],
     specifications: [
-      ['Use case', 'Personal night-time visibility and safety'],
-      ['Charging', 'USB Type-C powered system'],
-      ['Lighting', 'Integrated LED glow system'],
-      ['Emergency', 'SOS and torch handle function']
+      ['Use case', 'Night-time visibility and personal safety'],
+      ['Lighting', 'Exactly 15 LED strips'],
+      ['Charging', 'USB charging for the LED lighting'],
+      ['Colour', 'Neon orange'],
+      ['Handle features', 'Small torch and SOS button']
     ],
     howItWorks: [
-      'The lighting system activates automatically to improve visibility in low-light conditions and nighttime movement.',
-      'USB Type-C charging keeps the umbrella ready for regular use, while the SOS and torch features increase safety support.',
-      'It is built especially for evening walks, travel and visibility-focused use.'
+      'The 15 LED strips illuminate the canopy to improve visibility at night.',
+      'USB charging powers the LED lighting system.',
+      'A small torch and an SOS button are included on the handle.'
     ],
     faqs: [
       {
-        question: 'Is Glow Brella meant for night use?',
-        answer: 'Yes. It is designed to improve visibility and safety in the dark with LED lights and emergency features.'
+        question: 'How many LED strips does Glow Brella have?',
+        answer: 'Glow Brella is specified with exactly 15 LED strips.'
       },
       {
-        question: 'Can it charge devices?',
-        answer: 'Yes. Glow Brella includes USB Type-C charging support for everyday convenience.'
+        question: 'How are the LED strips charged?',
+        answer: 'The concept includes USB charging for the LED strips.'
       },
       {
-        question: 'Does it include an emergency function?',
-        answer: 'Yes. It includes an SOS button and a torch built into the handle for added safety.'
+        question: 'What safety features are on the handle?',
+        answer: 'The handle includes a small torch and an SOS button.'
       }
     ],
     related: ['Smart Bella', 'Cool Brella', 'Style Bella']
@@ -177,48 +163,42 @@ const PRODUCT_CATALOG = {
   'Style Bella': {
     name: 'Style Bella',
     category: 'Fashion & Customization',
-    price: 1499,
+    price: 2500,
     image: 'images/products/custom-bella.png',
-    description: 'A personalised umbrella with interchangeable canopy designs and custom branding options for personal or corporate use.',
-    heroText: 'Express your style with personalised designs, interchangeable canopy options and branded finishes.',
+    description: 'A personalized umbrella with interchangeable canopies, custom designs and branding options.',
+    heroText: 'Choose a look that feels like yours, with options for personal designs and business branding.',
     features: [
-      { icon: '🎨', label: 'Interchangeable canopy designs' },
-      { icon: '🧩', label: 'Multiple design options' },
-      { icon: '✨', label: 'Custom request support' },
-      { icon: '🏢', label: 'Corporate branding' },
-      { icon: '💼', label: 'Personalised styling' }
+      { icon: '🎨', label: 'Custom designs' },
+      { icon: '🔄', label: 'Interchangeable canopy' },
+      { icon: '🏢', label: 'Branding options' },
+      { icon: '🌈', label: 'Choice of colours and patterns' }
     ],
-    highlights: ['Personal or corporate customisation', 'Design-ready canopy system', 'Brand-first experience'],
+    highlights: ['Personal customization', 'Interchangeable canopies', 'Corporate branding options'],
     specifications: [
-      ['Use case', 'Personal styling and brand customization'],
+      ['Use case', 'Personal style, events and business branding'],
       ['Canopy', 'Interchangeable designs'],
-      ['Request support', 'Custom customer design requests'],
-      ['Options', 'Corporate and personal branding']
+      ['Customization', 'Custom colours, patterns and prints'],
+      ['Branding', 'Personal and corporate options']
     ],
     howItWorks: [
-      'Choose from multiple canopy designs or share your own concept for a fully personalised look.',
-      'The structure supports interchangeable styles for both personal expression and branded presentation.',
-      'This makes it ideal for gifting, events and company identity experiences.'
+      'Choose a canopy colour, pattern or custom design.',
+      'Select an interchangeable canopy style to suit the occasion.',
+      'Add branding options for business, events or gifting.'
     ],
     faqs: [
       {
-        question: 'Can I request my own design?',
-        answer: 'Yes. Style Bella allows customers to choose different canopy designs and submit their own custom design requests.'
+        question: 'Can I customize Style Bella?',
+        answer: 'Yes. The concept includes custom designs, colours, patterns and branding options.'
       },
       {
-        question: 'Is it suitable for brands or corporate gifting?',
-        answer: 'Yes. It is ideal for personalised and corporate branding applications.'
-      },
-      {
-        question: 'Can I switch the canopy design later?',
-        answer: 'Yes. The product supports interchangeable canopy designs depending on your preferred style.'
+        question: 'Can the canopy be changed?',
+        answer: 'Yes. Style Bella is designed with interchangeable canopy options.'
       }
     ],
     related: ['Smart Bella', 'Glow Brella', 'Power Brella']
   }
 };
 
-const PRODUCT_META = PRODUCT_CATALOG;
 const DELIVERY_CHARGES = 0;
 const DISCOUNT_VALUE = 0;
 
@@ -227,15 +207,9 @@ function formatINR(value) {
 }
 
 function getCart() {
-  const raw = localStorage.getItem(CART_KEY);
-
-  if (!raw) {
-    return {};
-  }
-
   try {
-    return JSON.parse(raw);
-  } catch (error) {
+    return JSON.parse(localStorage.getItem(CART_KEY) || '{}');
+  } catch {
     return {};
   }
 }
@@ -246,132 +220,94 @@ function saveCart(cart) {
 
 function getProductNameFromQuery() {
   const params = new URLSearchParams(window.location.search);
-  return decodeURIComponent(params.get('product') || 'Smart Bella');
+  return params.get('product') || 'Smart Bella';
 }
 
 function updateBagCount() {
+  const cart = getCart();
+  const total = Object.values(cart).reduce(
+    (sum, quantity) => sum + Number(quantity || 0),
+    0
+  );
+
   const badge = document.getElementById('cart-count');
-  const headerItemTotal = document.getElementById('header-item-total');
-  const cart = getCart();
-  const total = Object.values(cart).reduce((sum, qty) => sum + Number(qty || 0), 0);
+  const headerTotal = document.getElementById('header-item-total');
 
-  if (badge) {
-    badge.textContent = total;
-  }
-
-  if (headerItemTotal) {
-    headerItemTotal.textContent = total;
-  }
-}
-
-function syncProductCards() {
-  const cart = getCart();
-
-  document.querySelectorAll('.product-option').forEach((card) => {
-    const productName = card.dataset.product;
-    const valueLabel = card.querySelector('.qty-value');
-
-    if (!valueLabel) return;
-
-    valueLabel.textContent = cart[productName] || 0;
-  });
+  if (badge) badge.textContent = total;
+  if (headerTotal) headerTotal.textContent = total;
 }
 
 function addToBag(productName, quantity = 1) {
+  if (!PRODUCT_CATALOG[productName]) return;
+
   const cart = getCart();
-  const amount = Number(quantity) || 1;
-  cart[productName] = (Number(cart[productName]) || 0) + amount;
+  cart[productName] = (Number(cart[productName]) || 0) + (Number(quantity) || 1);
   saveCart(cart);
   updateBagCount();
-  syncProductCards();
 
-  if (document.getElementById('bag-items')) {
-    renderBagPage();
-  }
+  if (document.getElementById('bag-items')) renderBagPage();
 }
 
 function removeFromBag(productName, quantity = 1) {
   const cart = getCart();
+  if (!cart[productName]) return;
 
-  if (!cart[productName]) {
-    return;
-  }
-
-  const amount = Number(quantity) || 1;
-  cart[productName] = Number(cart[productName]) - amount;
-
-  if (cart[productName] <= 0) {
-    delete cart[productName];
-  }
+  cart[productName] -= Number(quantity) || 1;
+  if (cart[productName] <= 0) delete cart[productName];
 
   saveCart(cart);
   updateBagCount();
-  syncProductCards();
 
-  if (document.getElementById('bag-items')) {
-    renderBagPage();
-  }
+  if (document.getElementById('bag-items')) renderBagPage();
 }
 
 function bindProductControls() {
   document.addEventListener('click', (event) => {
-    const addButton = event.target.closest('.qty-add');
-
+    const addButton = event.target.closest('.detail-add-to-bag');
     if (addButton) {
-      const productCard = addButton.closest('.product-option');
+      const quantity = Number(document.getElementById('product-qty')?.value || 1);
+      addToBag(addButton.dataset.product, quantity);
+      return;
+    }
 
-      if (productCard) {
-        addToBag(productCard.dataset.product);
-      }
-
+    const buyButton = event.target.closest('.detail-buy-now');
+    if (buyButton) {
+      const quantity = Number(document.getElementById('product-qty')?.value || 1);
+      addToBag(buyButton.dataset.product, quantity);
+      window.location.href = 'cart.html';
       return;
     }
 
     const removeButton = event.target.closest('.qty-remove');
+    const addQuantityButton = event.target.closest('.qty-add');
 
-    if (removeButton) {
-      const productCard = removeButton.closest('.product-option');
+    if (removeButton || addQuantityButton) {
+      const item = event.target.closest('.bag-item');
+      if (!item) return;
 
-      if (productCard) {
-        removeFromBag(productCard.dataset.product);
-      }
+      if (addQuantityButton) addToBag(item.dataset.product);
+      else removeFromBag(item.dataset.product);
+      return;
     }
 
-    const detailAddButton = event.target.closest('.detail-add-to-bag');
-
-    if (detailAddButton) {
-      const productName = detailAddButton.dataset.product;
-      const qtyInput = document.getElementById('product-qty');
-      const qty = Number(qtyInput?.value || 1);
-
-      if (productName) {
-        addToBag(productName, qty);
-      }
-    }
-
-    const detailBuyButton = event.target.closest('.detail-buy-now');
-
-    if (detailBuyButton) {
-      const productName = detailBuyButton.dataset.product;
-      const qtyInput = document.getElementById('product-qty');
-      const qty = Number(qtyInput?.value || 1);
-
-      if (productName) {
-        addToBag(productName, qty);
-        window.location.href = 'cart.html';
-      }
+    const deleteButton = event.target.closest('.remove-item');
+    if (deleteButton) {
+      const cart = getCart();
+      delete cart[deleteButton.dataset.product];
+      saveCart(cart);
+      renderBagPage();
     }
   });
 }
 
 function renderBagPage() {
   const bagItems = document.getElementById('bag-items');
-  const subtotalEl = document.getElementById('subtotal');
-  const deliveryEl = document.getElementById('delivery');
-  const discountEl = document.getElementById('discount');
-  const totalPriceEl = document.getElementById('total-price');
+  const subtotalElement = document.getElementById('subtotal');
+  const deliveryElement = document.getElementById('delivery');
+  const discountElement = document.getElementById('discount');
+  const totalElement = document.getElementById('total-price');
 
-  if (!bagItems || !subtotalEl || !deliveryEl || !discountEl || !totalPriceEl) {
+  if (!bagItems || !subtotalElement || !deliveryElement || !discountElement || !totalElement) {
     return;
   }
 
@@ -379,7 +315,7 @@ function renderBagPage() {
   const entries = Object.entries(cart);
   let subtotal = 0;
 
-  if (!entries.length) {
+  if (entries.length === 0) {
     bagItems.innerHTML = `
       <div class="empty-cart">
         <h3>Your bag is empty</h3>
@@ -388,94 +324,66 @@ function renderBagPage() {
       </div>
     `;
 
-    subtotalEl.textContent = formatINR(0);
-    deliveryEl.textContent = formatINR(DELIVERY_CHARGES);
-    discountEl.textContent = `- ${formatINR(DISCOUNT_VALUE)}`;
-    totalPriceEl.textContent = formatINR(0);
+    subtotalElement.textContent = formatINR(0);
+    deliveryElement.textContent = formatINR(DELIVERY_CHARGES);
+    discountElement.textContent = `- ${formatINR(DISCOUNT_VALUE)}`;
+    totalElement.textContent = formatINR(0);
     updateBagCount();
     return;
   }
 
-  bagItems.innerHTML = entries.map(([productName, qty]) => {
-    const product = PRODUCT_META[productName] || { price: 0, image: '', description: '' };
-    const safeQty = Number(qty) || 0;
-    const itemSubtotal = product.price * safeQty;
+  bagItems.innerHTML = entries.map(([productName, quantity]) => {
+    const product = PRODUCT_CATALOG[productName];
+    if (!product) return '';
+
+    const safeQuantity = Number(quantity) || 0;
+    const itemSubtotal = product.price * safeQuantity;
     subtotal += itemSubtotal;
 
     return `
-      <article class="bag-item" data-product="${productName}">
-        <img class="bag-item-image" src="${product.image}" alt="${productName} umbrella" onerror="this.src='images/products/smart-bella.png';">
+      <article class="bag-item" data-product="${product.name}">
+        <img class="bag-item-image"
+             src="${product.image}"
+             alt="${product.name} umbrella"
+             onerror="this.src='images/products/smart-bella.png';">
         <div class="bag-item-copy">
           <div class="bag-item-header">
-            <h3 class="bag-item-name">${productName}</h3>
-            <button class="remove-item" type="button" data-product="${productName}">Remove</button>
+            <h3 class="bag-item-name">${product.name}</h3>
+            <button class="remove-item"
+                    type="button"
+                    data-product="${product.name}">Remove</button>
           </div>
           <p class="bag-item-meta">${product.description}</p>
           <div class="bag-item-footer">
             <div class="qty-control">
-              <button class="qty-btn qty-remove" type="button" aria-label="Remove one ${productName}">−</button>
-              <span class="qty-value">${safeQty}</span>
-              <button class="qty-btn qty-add" type="button" aria-label="Add one ${productName}">＋</button>
+              <button class="qty-btn qty-remove"
+                      type="button"
+                      aria-label="Remove one ${product.name}">−</button>
+              <span class="qty-value">${safeQuantity}</span>
+              <button class="qty-btn qty-add"
+                      type="button"
+                      aria-label="Add one ${product.name}">＋</button>
             </div>
-            <div class="unit-price">${productName === 'Style Bella' ? `From ${formatINR(product.price)}` : formatINR(product.price)}</div>
+            <div class="unit-price">${formatINR(product.price)}</div>
           </div>
         </div>
       </article>
     `;
   }).join('');
 
-  const finalTotal = subtotal + DELIVERY_CHARGES - DISCOUNT_VALUE;
+  const total = subtotal + DELIVERY_CHARGES - DISCOUNT_VALUE;
 
-  subtotalEl.textContent = formatINR(subtotal);
-  deliveryEl.textContent = formatINR(DELIVERY_CHARGES);
-  discountEl.textContent = `- ${formatINR(DISCOUNT_VALUE)}`;
-  totalPriceEl.textContent = formatINR(finalTotal);
-
-  document.querySelectorAll('.qty-add').forEach((button) => {
-    button.addEventListener('click', () => {
-      const item = button.closest('.bag-item');
-
-      if (item) {
-        addToBag(item.dataset.product);
-      }
-    });
-  });
-
-  document.querySelectorAll('.qty-remove').forEach((button) => {
-    button.addEventListener('click', () => {
-      const item = button.closest('.bag-item');
-
-      if (item) {
-        removeFromBag(item.dataset.product);
-      }
-    });
-  });
-
-  document.querySelectorAll('.remove-item').forEach((button) => {
-    button.addEventListener('click', () => {
-      const productName = button.dataset.product;
-
-      if (!productName) return;
-
-      const currentCart = getCart();
-      delete currentCart[productName];
-      saveCart(currentCart);
-      updateBagCount();
-      syncProductCards();
-      renderBagPage();
-    });
-  });
-
+  subtotalElement.textContent = formatINR(subtotal);
+  deliveryElement.textContent = formatINR(DELIVERY_CHARGES);
+  discountElement.textContent = `- ${formatINR(DISCOUNT_VALUE)}`;
+  totalElement.textContent = formatINR(total);
   updateBagCount();
 }
 
 function renderProductDetailPage() {
   const root = document.getElementById('product-detail-root');
-  const detailSections = document.getElementById('product-detail-sections');
-
-  if (!root || !detailSections) {
-    return;
-  }
+  const sections = document.getElementById('product-detail-sections');
+  if (!root || !sections) return;
 
   const productName = getProductNameFromQuery();
   const product = PRODUCT_CATALOG[productName];
@@ -486,12 +394,9 @@ function renderProductDetailPage() {
   }
 
   const breadcrumb = document.getElementById('current-product');
+  if (breadcrumb) breadcrumb.textContent = product.name;
 
-  if (breadcrumb) {
-    breadcrumb.textContent = product.name;
-  }
-
-  const customControl = product.name === 'Style Bella'
+  const styleCustomization = product.name === 'Style Bella'
     ? `
       <div class="customization-panel">
         <label for="custom-design">Choose canopy design</label>
@@ -502,7 +407,8 @@ function renderProductDetailPage() {
           <option value="Monogram Luxe">Monogram Luxe</option>
         </select>
         <label for="custom-request">Custom request</label>
-        <textarea id="custom-request" placeholder="Tell us your custom design idea or branding requirement..."></textarea>
+        <textarea id="custom-request"
+                  placeholder="Describe your custom design or branding idea"></textarea>
       </div>
     `
     : '';
@@ -510,18 +416,22 @@ function renderProductDetailPage() {
   root.innerHTML = `
     <div class="product-visual-panel">
       <div class="product-main-image-wrap">
-        <img id="main-product-image" src="${product.image}" alt="${product.name}" onerror="this.src='images/products/smart-bella.png';">
+        <img id="main-product-image"
+             src="${product.image}"
+             alt="${product.name}"
+             onerror="this.src='images/products/smart-bella.png';">
       </div>
       <div class="product-thumb-row">
-        <button class="product-thumb is-active" type="button" data-image="${product.image}">
-          <img src="${product.image}" alt="${product.name} thumbnail" onerror="this.src='images/products/smart-bella.png';">
-        </button>
-        <button class="product-thumb" type="button" data-image="${product.image}">
-          <img src="${product.image}" alt="${product.name} alternate thumbnail" onerror="this.src='images/products/smart-bella.png';">
-        </button>
-        <button class="product-thumb" type="button" data-image="${product.image}">
-          <img src="${product.image}" alt="${product.name} alternate thumbnail 2" onerror="this.src='images/products/smart-bella.png';">
-        </button>
+        ${[1, 2, 3].map((number, index) => `
+          <button class="product-thumb ${index === 0 ? 'is-active' : ''}"
+                  type="button"
+                  data-image="${product.image}"
+                  aria-label="View ${product.name} image ${number}">
+            <img src="${product.image}"
+                 alt="${product.name} thumbnail ${number}"
+                 onerror="this.src='images/products/smart-bella.png';">
+          </button>
+        `).join('')}
       </div>
     </div>
 
@@ -529,14 +439,18 @@ function renderProductDetailPage() {
       <span class="detail-category">${product.category}</span>
       <h1>${product.name}</h1>
       <p class="detail-description">${product.description}</p>
+
       <div class="detail-price-row">
-        <span class="detail-price-label">${product.name === 'Style Bella' ? 'Starting price' : 'Proposed price'}</span>
-        <span class="detail-price">${formatINR(product.price)}${product.name === 'Style Bella' ? ' onwards' : ''}</span>
+        <span class="detail-price-label">Proposed price</span>
+        <span class="detail-price">${formatINR(product.price)}</span>
       </div>
+
       <p class="detail-subtext">${product.heroText}</p>
 
       <ul class="detail-feature-badges">
-        ${product.features.map((item) => `<li><span>${item.icon}</span> ${item.label}</li>`).join('')}
+        ${product.features.map((feature) => `
+          <li><span>${feature.icon}</span> ${feature.label}</li>
+        `).join('')}
       </ul>
 
       <div class="purchase-box">
@@ -550,29 +464,31 @@ function renderProductDetailPage() {
         </div>
 
         <div class="purchase-actions">
-          <button type="button" class="detail-add-to-bag" data-product="${product.name}">Add to Bag</button>
-          <button type="button" class="detail-buy-now" data-product="${product.name}">Buy Now</button>
+          <button type="button"
+                  class="detail-add-to-bag"
+                  data-product="${product.name}">Add to Bag</button>
+          <button type="button"
+                  class="detail-buy-now"
+                  data-product="${product.name}">Buy Now</button>
         </div>
       </div>
 
-      ${customControl}
+      ${styleCustomization}
     </div>
   `;
 
-  detailSections.innerHTML = `
+  sections.innerHTML = `
     <div class="detail-section-card">
-      <div class="detail-section-heading">
-        <span>Key Features</span>
-      </div>
+      <div class="detail-section-heading"><span>Key Features</span></div>
       <ul class="detail-points">
-        ${product.features.map((item) => `<li><span>${item.icon}</span>${item.label}</li>`).join('')}
+        ${product.features.map((feature) => `
+          <li><span>${feature.icon}</span>${feature.label}</li>
+        `).join('')}
       </ul>
     </div>
 
     <div class="detail-section-card">
-      <div class="detail-section-heading">
-        <span>Product Specifications</span>
-      </div>
+      <div class="detail-section-heading"><span>Product Specifications</span></div>
       <div class="spec-grid">
         ${product.specifications.map(([label, value]) => `
           <div class="spec-item">
@@ -584,18 +500,14 @@ function renderProductDetailPage() {
     </div>
 
     <div class="detail-section-card">
-      <div class="detail-section-heading">
-        <span>How It Works</span>
-      </div>
+      <div class="detail-section-heading"><span>How It Works</span></div>
       <ol class="process-list">
         ${product.howItWorks.map((step) => `<li>${step}</li>`).join('')}
       </ol>
     </div>
 
     <div class="detail-section-card">
-      <div class="detail-section-heading">
-        <span>Frequently Asked Questions</span>
-      </div>
+      <div class="detail-section-heading"><span>Frequently Asked Questions</span></div>
       <div class="faq-list">
         ${product.faqs.map((faq) => `
           <div class="faq-item">
@@ -607,19 +519,19 @@ function renderProductDetailPage() {
     </div>
 
     <div class="detail-section-card">
-      <div class="detail-section-heading">
-        <span>You May Also Like</span>
-      </div>
+      <div class="detail-section-heading"><span>You May Also Like</span></div>
       <div class="related-grid">
         ${product.related.map((name) => {
-          const item = PRODUCT_CATALOG[name];
-
+          const relatedProduct = PRODUCT_CATALOG[name];
           return `
-            <a class="related-card" href="product.html?product=${encodeURIComponent(name)}">
-              <img src="${item.image}" alt="${name}" onerror="this.src='images/products/smart-bella.png';">
+            <a class="related-card"
+               href="product.html?product=${encodeURIComponent(name)}">
+              <img src="${relatedProduct.image}"
+                   alt="${name}"
+                   onerror="this.src='images/products/smart-bella.png';">
               <div>
                 <h4>${name}</h4>
-                <span>${formatINR(item.price)}</span>
+                <span>${formatINR(relatedProduct.price)}</span>
               </div>
             </a>
           `;
@@ -630,82 +542,41 @@ function renderProductDetailPage() {
 
   const mainImage = document.getElementById('main-product-image');
 
-  document.querySelectorAll('.product-thumb').forEach((thumb) => {
-    thumb.addEventListener('click', () => {
-      const selectedImage = thumb.dataset.image;
-
-      if (mainImage && selectedImage) {
-        mainImage.src = selectedImage;
-      }
-
+  document.querySelectorAll('.product-thumb').forEach((thumbnail) => {
+    thumbnail.addEventListener('click', () => {
+      if (mainImage) mainImage.src = thumbnail.dataset.image;
       document.querySelectorAll('.product-thumb').forEach((item) => {
-        item.classList.toggle('is-active', item === thumb);
+        item.classList.toggle('is-active', item === thumbnail);
       });
     });
   });
 
-  const qtyInput = document.getElementById('product-qty');
+  const quantityInput = document.getElementById('product-qty');
 
   document.querySelectorAll('.stepper-btn').forEach((button) => {
     button.addEventListener('click', () => {
-      if (!qtyInput) return;
+      if (!quantityInput) return;
 
-      const currentValue = Number(qtyInput.value) || 1;
-      const nextValue = button.dataset.action === 'increase'
-        ? currentValue + 1
-        : Math.max(1, currentValue - 1);
+      const current = Number(quantityInput.value) || 1;
+      const next = button.dataset.action === 'increase'
+        ? Math.min(9, current + 1)
+        : Math.max(1, current - 1);
 
-      qtyInput.value = nextValue;
+      quantityInput.value = next;
     });
   });
 
-  if (qtyInput) {
-    qtyInput.addEventListener('input', () => {
-      const value = Number(qtyInput.value) || 1;
-      qtyInput.value = Math.max(1, Math.min(9, value));
+  if (quantityInput) {
+    quantityInput.addEventListener('change', () => {
+      const value = Number(quantityInput.value) || 1;
+      quantityInput.value = Math.max(1, Math.min(9, value));
     });
   }
-}
-
-function renderHeroQrCode() {
-  const qrCanvas = document.getElementById('qr-code');
-
-  if (!qrCanvas || typeof QRCode === 'undefined') {
-    return;
-  }
-
-  const downloadButton = document.getElementById('download-qr');
-
-  QRCode.toCanvas(qrCanvas, NIMBOTICS_PUBLIC_URL, {
-    width: 128,
-    margin: 1,
-    color: {
-      dark: '#0a0d13',
-      light: '#ffffff'
-    }
-  }, function(error) {
-    if (error) {
-      console.error('QR code generation failed:', error);
-      return;
-    }
-
-    if (downloadButton) {
-      downloadButton.disabled = false;
-      downloadButton.addEventListener('click', () => {
-        const downloadLink = document.createElement('a');
-        downloadLink.download = 'nimbotics-website-qr.png';
-        downloadLink.href = qrCanvas.toDataURL('image/png');
-        downloadLink.click();
-      });
-    }
-  });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   updateBagCount();
-  syncProductCards();
   bindProductControls();
   renderProductDetailPage();
   renderBagPage();
-  renderHeroQrCode();
 });
